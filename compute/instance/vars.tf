@@ -40,6 +40,11 @@ variable "cloud-init" {
   default = ""
 }
 
+variable "tags" {
+  type    = list(any)
+  default = []
+}
+
 variable "labels" {
   type    = map(any)
   default = {}
@@ -55,3 +60,6 @@ variable "allow_stopping_for_update" {
   default = true
 }
 
+variable "service_account" {
+  type = string
+}

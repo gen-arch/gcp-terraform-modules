@@ -24,7 +24,7 @@ resource "google_compute_instance" "default" {
     scopes = ["cloud-platform"]
   }
   metadata = {
-    user-data       = var.cloud_init
+    user-data       = var.cloud-init
     startup-script  = var.startup_script
     enable-osconfig = "true"
   }
